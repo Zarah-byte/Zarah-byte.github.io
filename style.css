@@ -1,0 +1,22 @@
+:root {
+    --color: blue;
+    --background: #ddd;
+
+    --body-copy: 1rem;
+    --heading-copy: calc(var(--body-copy) * 2);
+}
+
+body{
+    color: var(--color);
+    background-color: var(--background);
+    font-size: var(--body-copy);
+}
+
+h1{
+    font-size: var(--heading-copy);
+}
+
+a {
+    text-decoration: underline;
+    text-underline-offset: .2rem;
+}
