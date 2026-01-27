@@ -25,20 +25,24 @@ body {
 	scroll-behavior: smooth;
 }
 
-	h2{
-		font-size: var(--h2-copy);
-	font-weight: 600; 		/* REPLACE WITH VARIABLE */
-		padding-top: 2rem;
-		padding-bottom: 2rem;
-	}
+h2 {
+	font-size: var(--h2-copy);
+	font-weight: 600;
+	/* REPLACE WITH VARIABLE */
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	padding: 1rem;
+	padding-left: 4rem;
+	background-color: var(--color);
+	border-top-left-radius: 2rem;
+	border-top-right-radius: 2rem;
+}
 
-
-h3{
+h3 {
 	font-weight: 800;
 }
-	
 
-	
+
 h1 {
 	font-family: var(--font-heading);
 	font-size: var(--h1-copy);
@@ -46,16 +50,15 @@ h1 {
 	text-transform: uppercase;
 	padding-top: 2rem;
 	/* text-align: center; */
-	width: fit-content; 
+	width: fit-content;
 	margin: 0 auto;
 }
 
 .work {
-	h2{
-		padding-top: 2rem;
-		padding-bottom: 2rem;
-		padding-left: 4rem;
-	}
+	background-color: aliceblue;
+	color: var(--background);
+	border-radius: 2rem;
+	margin: 1rem;
 }
 
 .intro {
@@ -70,7 +73,7 @@ h1 {
 	padding-left: 2rem;
 	padding-right: 3rem;
 	flex: 1;
-	max-width: 70vw; 
+	max-width: 70vw;
 }
 
 .find_links {
@@ -78,19 +81,20 @@ h1 {
 	flex-shrink: 0;
 	white-space: nowrap;
 }
+
 /* a {
 	text-decoration: underline;
 	text-underline-offset: .2rem;
 } */
 
-ul.projects {
-	border-bottom: solid .05rem var(--color);
-
+/* ul.projects {
+	border-bottom: solid .05rem var(--color); */
+/* 
 a {
 	display: block;
 	text-decoration: none;
 	color: inherit;
-}}
+} */
 
 a li {
 	padding: 1rem;
