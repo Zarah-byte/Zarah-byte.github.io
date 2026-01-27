@@ -1,6 +1,7 @@
 :root {
-	--color: blue;
-	--background: #ddd;
+	--color: #9EBEED;
+	--background: #4B6B03;
+	--white: #F0EFEC;
 
 	/* ======FONTS====== */
 	--body-copy: 1.5rem;
@@ -13,15 +14,19 @@
 	--gutter: calc(var(--body-copy) * 1.5);
 }
 
+
 body {
 	font-family: var(--font-body);
 	color: var(--color);
 	background-color: var(--background);
 	font-size: var(--body-copy);
+
+	scroll-behavior: smooth;
 }
 
 h2 {
 	font-size: var(--h2-copy);
+	font-weight: 600; 		/* REPLACE WITH VARIABLE */
 }
 
 h1 {
@@ -48,10 +53,9 @@ h1 {
 	padding-left: 2rem;
 	padding-right: 3rem;
 	flex: 1;
-	max-width: 70vw;/* important for text wrapping inside flex */
+	max-width: 70vw; 
 }
 
-/* Keep the nav from shrinking or wrapping */
 .find_links {
 	width: 10vw;
 	flex-shrink: 0;
@@ -63,7 +67,7 @@ h1 {
 } */
 
 ul.projects {
-	border-bottom: solid .05rem black;
+	border-bottom: solid .05rem var(--color);
 
 a {
 	display: block;
@@ -82,13 +86,15 @@ a li {
 	padding-bottom: var(--gutter);
 	padding-left: calc(var(--gutter) * 2);
 	padding-right: calc(var(--gutter) * 2);
-	border-top: solid .05rem black;
+	border-top: solid .05rem var(--color);
 	justify-content: space-between;
 }
 
 
 footer {
 	/* position: fixed; */
+	background-color: var(--color);
+	color: var(--background);
 	left: 0;
 	right: 0;
 	bottom: 0;
