@@ -1,67 +1,99 @@
 :root {
-    --color: blue;
-    --background: #ddd;
+	--color: blue;
+	--background: #ddd;
 
-    /* ======FONTS====== */
-    --body-copy: 1.5rem;
-    --heading-copy: calc(var(--body-copy) * 10);
-    --font-body:"Quicksand","helvetica","san-serif";
-    --font-heading:"Gasoek One";
+	/* ======FONTS====== */
+	--body-copy: 1.5rem;
+	--h1-copy: calc(var(--body-copy) * 7.5);
+	--h2-copy: calc(var(--body-copy) * 1.5);
+	--font-body: "Quicksand", "helvetica", "san-serif";
+	--font-heading: "Gasoek One";
 
-  /* ======SPACING====== */
-    --gutter: calc(var(--body-copy) * 1.5);
+	/* ======SPACING====== */
+	--gutter: calc(var(--body-copy) * 1.5);
+}
+
+body {
+	font-family: var(--font-body);
+	color: var(--color);
+	background-color: var(--background);
+	font-size: var(--body-copy);
+}
+
+h2 {
+	font-size: var(--h2-copy);
+}
+
+h1 {
+	font-family: var(--font-heading);
+	font-size: var(--h1-copy);
+	width: max-content;
+	text-transform: uppercase;
+	padding-top: 2rem;
+	/* text-align: center; */
+	width: fit-content; 
+	margin: 0 auto;
 }
 
 
-
-body{
-    font-family: var(--font-body);
-    color: var(--color);
-    background-color: var(--background);
-    font-size: var(--body-copy);
+.intro {
+	padding: 2rem;
+	display: flex;
+	flex-direction: row;
+	gap: 4rem;
+	align-items: flex-start;
 }
 
-h1{
-    font-family: var(--font-heading);
-    font-size: var(--heading-copy);
-    display: flex;
-    flex-direction: column;
-    line-height: 100%
+.intro p {
+	padding-left: 2rem;
+	padding-right: 3rem;
+	flex: 1;
+	max-width: 70vw;/* important for text wrapping inside flex */
 }
+
+/* Keep the nav from shrinking or wrapping */
+.find_links {
+	width: 10vw;
+	flex-shrink: 0;
+	white-space: nowrap;
+}
+/* a {
+	text-decoration: underline;
+	text-underline-offset: .2rem;
+} */
+
+ul.projects {
+	border-bottom: solid .05rem black;
 
 a {
-    text-decoration: underline;
-    text-underline-offset: .2rem;
+	display: block;
+	text-decoration: none;
+	color: inherit;
+}}
+
+a li {
+	padding: 1rem;
+	cursor: pointer;
 }
 
-ul a {
-    display: block;
-    text-decoration: none;
-    color: inherit;
-  }
-  
-  ul a li {
-    padding: 1rem;
-    cursor: pointer;
-  }
-  
-li {
-    background-color: #F2F1EC;
-    padding-top: var(--gutter);
-    padding-bottom: var(--gutter);
-    padding-left: calc(var(--gutter) * 2);
-    padding-right: calc(var(--gutter) * 2);
-    border-top: solid 1.5px black;
-    justify-content: space-between;
+.projects li {
+	/* background-color: #F2F1EC; */
+	padding-top: var(--gutter);
+	padding-bottom: var(--gutter);
+	padding-left: calc(var(--gutter) * 2);
+	padding-right: calc(var(--gutter) * 2);
+	border-top: solid .05rem black;
+	justify-content: space-between;
 }
+
 
 footer {
-    /* position: fixed; */
-    left: 0;
-    right: 0;
-    bottom: 0;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+	/* position: fixed; */
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
 
-    text-align: center;
+	text-align: center;
 }
