@@ -4,83 +4,199 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- META TAG https://typography-interaction-2526.github.io/topic/responsive/#viewport-meta-tag -->
-	<style>
-		@import 'reset.css' layer(reset);
-		@import 'style.css' layer(common);
-	</style>
-	<!-- ==============FONTS ============== -->
-	<style>
-		@import url('https://fonts.googleapis.com/css2?family=Gasoek+One&family=Instrument+Serif:ital@0;1&family=Nokora:wght@100..900&family=Quicksand:wght@300..700&family=Xanh+Mono:ital@0;1&display=swap');
-		</style>
+	<link rel="stylesheet" href="/Assets/reset.css">
+	<link rel="stylesheet" href="/Assets/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Geist:wght@100..900&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap"
+		rel="stylesheet">
 	<title>Index</title>
 </head>
 
 <body>
-	<hgroup>
-		<h1>Zarah Yaqub</h1>
-		<section class="intro">
-			<p>This website was created as part of the Typography & Interaction course in the MPS Communication Design program at Parsons School of Design and serves as my index page for <a href="https://typography-interaction-2526.github.io/">Type & Interaction</a>. All projects featured here were coded using HTML, CSS, and JavaScript.</p>
-			<nav class="find_links">
-				<h3>Contact</h3>
-				<ul>
-					<li><a href="mailto:zarahyaqubdesign@gmail.com">Email ↗</a></li>
-					<li><a href="#">LinkedIn ↗</a></li>
-					<li><a href="https://www.zarahyaqub.com/">Portfolio ↗</a></li>
-				</ul>
-			</nav>
-		</section>
+	<hgroup class="hero">
+		<svg class="logo-svg" viewBox="0 0 893 481" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path
+				d="M584.989 431.748C577.244 431.748 569.965 430.277 563.15 427.334C556.489 424.236 550.914 419.512 546.422 413.162V428.96H516.684V266.329H546.19V329.987C550.526 323.637 556.102 318.913 562.917 315.815C569.732 312.563 577.089 310.936 584.989 310.936C595.986 310.936 605.434 313.647 613.333 319.068C621.387 324.334 627.583 331.536 631.919 340.675C636.256 349.658 638.425 359.726 638.425 370.878C638.425 381.875 636.256 392.02 631.919 401.313C627.583 410.606 621.387 418.041 613.333 423.616C605.434 429.038 595.986 431.748 584.989 431.748ZM577.089 405.727C583.285 405.727 588.706 404.178 593.353 401.08C597.999 397.983 601.639 393.801 604.272 388.535C606.905 383.114 608.222 377.228 608.222 370.878C608.222 363.598 606.75 357.48 603.807 352.523C601.019 347.412 597.225 343.54 592.423 340.907C587.777 338.274 582.665 336.957 577.089 336.957C571.049 336.957 565.705 338.429 561.059 341.372C556.567 344.314 553.005 348.419 550.371 353.685C547.738 358.796 546.422 364.682 546.422 371.342C546.422 378.157 547.738 384.198 550.371 389.464C553.159 394.575 556.877 398.602 561.523 401.545C566.17 404.333 571.359 405.727 577.089 405.727Z"
+				fill="currentColor" />
+			<path
+				d="M442.913 431.748C433.001 431.748 424.559 429.657 417.589 425.475C410.619 421.138 405.276 415.253 401.559 407.818C397.841 400.229 395.983 391.632 395.983 382.029V313.724H425.489V377.615C425.489 386.134 427.657 393.104 431.994 398.525C436.486 403.946 442.991 406.656 451.51 406.656C460.338 406.656 466.921 404.023 471.258 398.757C475.594 393.491 477.763 386.444 477.763 377.615V313.724H507.501V428.96H477.763V415.485C473.891 420.751 468.779 424.778 462.429 427.566C456.234 430.354 449.728 431.748 442.913 431.748Z"
+				fill="currentColor" />
+			<path
+				d="M356.572 480.073V413.859C353.629 417.731 348.905 421.68 342.4 425.707C336.049 429.58 328.073 431.516 318.47 431.516C308.092 431.516 298.876 428.883 290.822 423.616C282.768 418.35 276.418 411.148 271.771 402.01C267.125 392.871 264.646 382.572 264.337 371.11C264.337 359.958 266.66 349.89 271.307 340.907C275.953 331.769 282.381 324.566 290.59 319.3C298.954 313.879 308.402 311.169 318.934 311.169C326.369 311.169 333.416 312.64 340.076 315.583C346.736 318.371 352.235 322.553 356.572 328.129V313.724H386.31V480.073H356.572ZM325.439 405.727C330.551 405.727 335.507 404.488 340.309 402.01C345.11 399.377 348.982 395.505 351.925 390.393C355.023 385.282 356.572 378.932 356.572 371.342C356.572 364.682 355.178 358.796 352.39 353.685C349.757 348.574 346.117 344.547 341.47 341.604C336.824 338.506 331.48 336.957 325.439 336.957C319.399 336.957 314.055 338.506 309.409 341.604C304.762 344.702 301.122 348.806 298.489 353.917C296.011 359.029 294.772 364.76 294.772 371.11C294.772 377.615 296.088 383.501 298.722 388.767C301.355 394.033 304.917 398.215 309.409 401.313C314.055 404.256 319.399 405.727 325.439 405.727Z"
+				fill="currentColor" />
+			<path
+				d="M184.305 431.748C177.489 431.748 171.139 430.354 165.253 427.566C159.368 424.778 154.566 420.829 150.849 415.717C147.287 410.451 145.505 404.256 145.505 397.131C145.505 388.612 147.596 381.642 151.778 376.221C155.96 370.8 161.691 366.773 168.971 364.14C176.405 361.507 184.692 360.19 193.83 360.19H221.245C221.245 354.924 220.393 350.51 218.689 346.948C217.14 343.385 214.74 340.675 211.487 338.816C208.389 336.802 204.517 335.796 199.871 335.796C194.45 335.796 189.571 337.035 185.234 339.513C181.052 341.836 178.496 345.786 177.567 351.362H147.829C148.603 342.998 151.469 335.796 156.425 329.755C161.381 323.715 167.732 319.068 175.476 315.815C183.22 312.563 191.507 310.936 200.335 310.936C211.177 310.936 220.316 312.95 227.75 316.977C235.34 321.004 241.148 326.735 245.175 334.169C249.202 341.449 251.216 350.123 251.216 360.19V395.272C251.525 398.68 252.764 401.003 254.933 402.242C257.101 403.481 259.967 404.101 263.529 404.101V428.96C256.249 428.96 250.131 428.263 245.175 426.869C240.374 425.475 236.424 423.462 233.326 420.829C230.228 418.041 227.595 414.556 225.427 410.374C221.865 416.414 216.289 421.526 208.699 425.708C201.265 429.735 193.133 431.748 184.305 431.748ZM192.901 407.818C198.012 407.818 202.659 406.656 206.841 404.333C211.177 402.01 214.662 398.757 217.295 394.575C219.928 390.393 221.245 385.592 221.245 380.171V379.241H195.689C192.281 379.241 189.029 379.784 185.931 380.868C182.833 381.797 180.355 383.346 178.496 385.514C176.638 387.528 175.708 390.316 175.708 393.878C175.708 398.68 177.335 402.242 180.587 404.565C183.995 406.734 188.099 407.818 192.901 407.818Z"
+				fill="currentColor" />
+			<path
+				d="M91.276 428.96V363.675L36.6785 266.329H70.3663L106.378 333.937L142.156 266.329H175.38L121.014 363.675V428.96H91.276Z"
+				fill="currentColor" />
+			<path
+				d="M434.686 246.581V83.9498H464.192V144.82C468.219 139.399 473.563 135.372 480.223 132.739C487.038 129.951 493.853 128.557 500.668 128.557C513.988 128.557 524.908 132.894 533.426 141.568C541.945 150.086 546.204 162.477 546.204 178.741V246.581H516.699V182.69C516.699 174.016 514.453 167.047 509.961 161.78C505.624 156.359 499.196 153.649 490.678 153.649C482.159 153.649 475.576 156.359 470.93 161.78C466.438 167.047 464.192 174.016 464.192 182.69V246.581H434.686Z"
+				fill="currentColor" />
+			<path
+				d="M348.163 249.369C341.348 249.369 334.998 247.975 329.112 245.187C323.226 242.399 318.425 238.449 314.708 233.338C311.145 228.072 309.364 221.877 309.364 214.752C309.364 206.233 311.455 199.263 315.637 193.842C319.819 188.421 325.55 184.394 332.829 181.761C340.264 179.128 348.55 177.811 357.689 177.811H385.104C385.104 172.545 384.252 168.131 382.548 164.568C380.999 161.006 378.598 158.296 375.346 156.437C372.248 154.423 368.376 153.417 363.729 153.417C358.308 153.417 353.429 154.656 349.092 157.134C344.911 159.457 342.355 163.407 341.426 168.983H311.687C312.462 160.619 315.327 153.417 320.284 147.376C325.24 141.335 331.59 136.689 339.335 133.436C347.079 130.184 355.365 128.557 364.194 128.557C375.036 128.557 384.174 130.571 391.609 134.598C399.198 138.625 405.007 144.356 409.034 151.79C413.061 159.07 415.074 167.744 415.074 177.811V212.893C415.384 216.301 416.623 218.624 418.792 219.863C420.96 221.102 423.825 221.722 427.388 221.722V246.581C420.108 246.581 413.99 245.884 409.034 244.49C404.232 243.096 400.283 241.082 397.185 238.449C394.087 235.661 391.454 232.176 389.286 227.995C385.723 234.035 380.147 239.146 372.558 243.328C365.123 247.355 356.992 249.369 348.163 249.369ZM356.759 225.439C361.871 225.439 366.517 224.277 370.699 221.954C375.036 219.631 378.521 216.378 381.154 212.196C383.787 208.014 385.104 203.213 385.104 197.792V196.862H359.547C356.14 196.862 352.887 197.404 349.789 198.489C346.692 199.418 344.214 200.967 342.355 203.135C340.496 205.149 339.567 207.937 339.567 211.499C339.567 216.301 341.193 219.863 344.446 222.186C347.853 224.355 351.958 225.439 356.759 225.439Z"
+				fill="currentColor" />
+			<path
+				d="M242.678 246.581V131.345H272.184V148.538C276.211 142.032 281.322 137.076 287.518 133.669C293.713 130.261 300.606 128.557 308.195 128.557V159.689H300.296C290.848 159.689 283.8 161.935 279.154 166.427C274.507 170.919 272.184 178.431 272.184 188.963V246.581H242.678Z"
+				fill="currentColor" />
+			<path
+				d="M156.091 249.369C149.276 249.369 142.926 247.975 137.04 245.187C131.155 242.399 126.353 238.449 122.636 233.338C119.073 228.072 117.292 221.877 117.292 214.752C117.292 206.233 119.383 199.263 123.565 193.842C127.747 188.421 133.478 184.394 140.758 181.761C148.192 179.128 156.479 177.811 165.617 177.811H193.032C193.032 172.545 192.18 168.131 190.476 164.568C188.927 161.006 186.527 158.296 183.274 156.437C180.176 154.423 176.304 153.417 171.657 153.417C166.236 153.417 161.358 154.656 157.021 157.134C152.839 159.457 150.283 163.407 149.354 168.983H119.616C120.39 160.619 123.255 153.417 128.212 147.376C133.168 141.335 139.518 136.689 147.263 133.436C155.007 130.184 163.294 128.557 172.122 128.557C182.964 128.557 192.103 130.571 199.537 134.598C207.127 138.625 212.935 144.356 216.962 151.79C220.989 159.07 223.002 167.744 223.002 177.811V212.893C223.312 216.301 224.551 218.624 226.72 219.863C228.888 221.102 231.754 221.722 235.316 221.722V246.581C228.036 246.581 221.918 245.884 216.962 244.49C212.16 243.096 208.211 241.082 205.113 238.449C202.015 235.661 199.382 232.176 197.214 227.995C193.651 234.035 188.075 239.146 180.486 243.328C173.051 247.355 164.92 249.369 156.091 249.369ZM164.688 225.439C169.799 225.439 174.445 224.277 178.627 221.954C182.964 219.631 186.449 216.378 189.082 212.196C191.715 208.014 193.032 203.213 193.032 197.792V196.862H167.476C164.068 196.862 160.815 197.404 157.718 198.489C154.62 199.418 152.142 200.967 150.283 203.135C148.424 205.149 147.495 207.937 147.495 211.499C147.495 216.301 149.121 219.863 152.374 222.186C155.782 224.355 159.886 225.439 164.688 225.439Z"
+				fill="currentColor" />
+			<path
+				d="M0 246.581V223.813L74.578 109.041H0.696991V83.9498H109.195V106.718L34.1525 221.257H109.66V246.581H0Z"
+				fill="currentColor" />
+			<path class="animate-on-load"
+				d="M669.803 39.6918C671.023 36.0035 675.799 35.0547 678.336 37.9968L725.736 92.9625C727.098 94.5421 729.298 95.1102 731.254 94.3876L799.341 69.2448C802.985 67.899 806.705 71.0418 805.987 74.8597L792.566 146.189C792.181 148.239 793.108 150.313 794.893 151.392L857.002 188.948C860.326 190.958 860.188 195.826 856.755 197.645L792.62 231.625C790.777 232.602 789.734 234.62 790.003 236.688L799.365 308.663C799.866 312.515 795.974 315.442 792.412 313.892L725.857 284.936C723.945 284.104 721.716 284.546 720.267 286.046L669.832 338.241C667.132 341.035 662.417 339.817 661.408 336.066L642.551 265.977C642.009 263.963 640.274 262.497 638.197 262.299L565.944 255.41C562.077 255.041 560.089 250.596 562.393 247.468L605.433 189.025C606.67 187.346 606.734 185.075 605.594 183.328L565.931 122.543C563.808 119.29 566.044 114.964 569.927 114.815L642.454 112.027C644.538 111.946 646.354 110.581 647.009 108.6L669.803 39.6918Z"
+				fill="currentColor" />
+		</svg>
+		<div class="about">
+			<p>This website was created as part of the Typography & Interaction course in the <a
+					href="https://mpscd.parsons.edu/">MPS Communication Design program</a> at <a
+					href="https://www.newschool.edu/parsons/">Parsons School of Design</a> and serves as my index page
+				for <a href="https://typography-interaction-2526.github.io/">Type & Interaction</a>. <br>
+				All projects featured here were coded using HTML, CSS, &amp; JavaScript.</p>
+			<p>See my code projects below&nbsp;<svg class="icon-arrow-down" viewBox="0 0 24 24" fill="none"
+					xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+					<path d="M12 5V19M12 19L6 13M12 19L18 13" stroke="currentColor" stroke-width="2"
+						stroke-linecap="round" stroke-linejoin="round" />
+				</svg></p>
+		</div>
 	</hgroup>
 
 	<section class="work">
-		<h2>Work</h2>
 		<ul class="projects">
-			<a href="https://zarahyaqub.github.io/Project01_Manuscript/">
-				<li class="project-1">
-					<h3>Manuscript</h3>
-					<!-- <p>OCT 2025</p> -->
-					<p>This project was created as a response to the reading Mismatch: How Inclusion Shapes Design, By Kat Holmes and my response to it.
+			<li class="project-1">
+				<a href="https://zarahyaqub.github.io/Project01_Manuscript/">
+					<hgroup class="card-title">
+						<p class="img-num">1</p>
+						<h3>Manuscript</h3>
+					</hgroup>
+
+					<p class="project-description">
+						basic skills in typography, focusing on expression, hierarchy, and form appropriate to the
+						reading: Mismatch: How Inclusion Shapes Design By Kat Holmes.
 					</p>
-					<!-- <p class="arrow">🡽</p> -->
-				</li>
 
-			</a>
-			<a href="https://astapable.github.io/Evgenii-X-Zarah/">
-				<li class="project-2">
-					<h3>Spread</h3>
-					<!-- <p>OCT 2025</p> -->
-					<p>This project was created in collaboration with Evgenii Astapov. The project emphasized collaboration, pair&nbsp;programming, and adaptive design principles.
+					<section class="built-with">
+						<p>Built with</p>
+						<p>HTML/CSS</p>
+					</section>
+				</a>
+			</li>
+
+			<li class="project-2">
+				<a href="https://astapable.github.io/Evgenii-X-Zarah/">
+					<hgroup class="card-title">
+						<p class="img-num">2</p>
+						<h3>Spread</h3>
+					</hgroup>
+
+					<p class="project-description">
+						A collaborative pair coding project focusing on responsiveness across mobile desktop and print.
 					</p>
-				</li>
-			</a>
 
-			<a href="https://zarahyaqub.github.io/project3-binding/">
-				<li class="project-3">
-					<h3>Binding</h3>
-					<!-- <p>OCT 2025</p> -->
-					<p>A multi-page typographic “book” that curates three design texts into a cohesive, responsive website with a cover, chapters, and navigation, exploring how design systems can unify distinct voices.</p>
-				</li>
-			</a>
+					<section class="built-with">
+						<p>Built with</p>
+						<p>HTML/CSS</p>
+					</section>
+				</a>
+			</li>
 
-			<a href="">
-				<li class="project-4">
-					<h3>Links</h3>
-					<p>coming soon</p>
-				</li>
-			</a>
+			<li class="project-3">
+				<a href="https://zarahyaqub.github.io/project3-binding/">
+					<hgroup class="card-title">
+						<p class="img-num">3</p>
+						<h3>Binding</h3>
+					</hgroup>
 
-			<a href="">
-				<li class="project-5">
-					<h3>Functions</h3>
-					<p>coming soon</p>
-				</li>
-			</a>
+					<p class="project-description">
+						A project creating a digital “book” by bringing together a curated selection of texts from their
+						previous work into one cohesive experience.
+					</p>
+
+					<section class="built-with">
+						<p>HTML/CSS</p>
+					</section>
+				</a>
+			</li>
+
+			<li class="project-4">
+				<a href="https://zarah-byte.github.io/links/">
+					<hgroup class="card-title">
+						<p class="img-num">4</p>
+						<h3>Links</h3>
+					</hgroup>
+
+					<p class="project-description">
+						Created a themed collection using Are.na as a CMS and its API, then design and built a
+						responsive website to present it.
+					</p>
+
+					<section class="built-with">
+						<p>HTML/CSS/JS</p>
+					</section>
+				</a>
+			</li>
+
+			<li class="project-5">
+				<a href="">
+					<hgroup class="card-title">
+						<p class="img-num">5</p>
+						<h3>Functions</h3>
+					</hgroup>
+
+					<p class="project-description">
+						Coming soon.
+					</p>
+
+					<section class="built-with">
+						<p>Built with</p>
+						<p>HTML/CSS/JS</p>
+					</section>
+				</a>
+			</li>
 		</ul>
 	</section>
-</body>
 
-<footer>
-	<p>These works were all created by Zarah Yaqub for Typography & Inteaction 2025-2026</p>
-</footer>
+	<section class="find_links">
+		<h2>Find Me</h2>
+		<ul>
+			<li>
+				<a href="mailto:zarahyaqubdesign@gmail.com">
+					Email
+					<svg class="icon-arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M7 17L17 7M17 7H8M17 7V16" stroke="currentColor" stroke-width="2"
+							stroke-linecap="round" stroke-linejoin="round" />
+					</svg>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					LinkedIn
+					<svg class="icon-arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M7 17L17 7M17 7H8M17 7V16" stroke="currentColor" stroke-width="2"
+							stroke-linecap="round" stroke-linejoin="round" />
+					</svg>
+				</a>
+			</li>
+			<li>
+				<a href="https://www.zarahyaqub.com/">
+					Portfolio
+					<svg class="icon-arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M7 17L17 7M17 7H8M17 7V16" stroke="currentColor" stroke-width="2"
+							stroke-linecap="round" stroke-linejoin="round" />
+					</svg>
+				</a>
+			</li>
+		</ul>
+	</section>
+
+	<footer>
+		<p>&copy; Zarah Yaqub</p>
+		<p>Typography &amp; Interaction 25–26</p>
+	</footer>
+</body>
 
 </html>
