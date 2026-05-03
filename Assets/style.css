@@ -44,7 +44,6 @@ body {
 	line-height: 1.4;
 	padding: var(--gutter);
 	max-width: 90rem;
-	margin-inline: auto;
 }
 
 a {
@@ -92,7 +91,7 @@ h2 {
 ========================= */
 
 body {
-	&>hgroup {
+	hgroup {
 		display: grid;
 		/* gap: var(--space-lg); */
 		margin-bottom: var(--space-2xl);
@@ -113,8 +112,8 @@ body {
 	max-width: 32rem;
 
 	& a {
-		text-decoration: underline 0.0625rem var(--color-text);
-		text-underline-offset: 0.4rem;
+		text-decoration: underline 0.1rem var(--color-text);
+		text-underline-offset: 0.1rem;
 	}
 
 	& p {
@@ -142,21 +141,24 @@ body {
 	flex-direction: column;
 	border-top: 1px solid var(--color-text);
 
-	& li {
+	li {
+		padding-left: 2rem;
+		padding-right: 2rem;
+		padding-top: 2rem;
+		padding-bottom: 2rem;
 		border-bottom: 1px solid var(--color-text);
-		list-style: none;
-	}
 
-	& li a {
+		&:hover {
+			background-color: var(--color-text);
+			color: var(--color-bg);
+		}
+
+		a {
 		display: flex;
 		flex-direction: column;
 		gap: var(--space-sm);
-		padding-block: var(--space-lg);
+		/* padding-block: var(--space-lg); */
 	}
-
-	& li:hover {
-		opacity: 0.9;
-		transition: opacity var(--transition-fast);
 	}
 }
 
@@ -175,7 +177,7 @@ body {
 	flex-shrink: 0;
 }
 
-.card-title h3 {
+h3 {
 	font-family: var(--font-heading);
 	line-height: 1;
 }
@@ -204,22 +206,22 @@ body {
 .find_links {
 	padding-top: var(--space-2xl);
 
-	& h2 {
+	h2 {
 		margin-bottom: var(--space-md);
 	}
 
-	& ul {
+	ul {
 		display: grid;
 		gap: var(--space-sm);
 	}
 
-	& li a {
+	li a {
 		display: inline-flex;
 		align-items: center;
 		gap: var(--space-xs);
 	}
 
-	& li a:hover .icon-arrow {
+	li a:hover .icon-arrow {
 		transform: rotate(45deg);
 	}
 }
@@ -237,7 +239,7 @@ footer {
 }
 
 /* =========================
-   RESPONSIVEMESS
+   MEDIA QUERIES
 ========================= */
 @media (width > 768px) {
 
@@ -326,5 +328,10 @@ footer {
 
 	.project-description {
 		max-width: 44ch;
+	}
+
+	.projects li {
+		padding-top: 0.5rem;
+		padding-bottom: 0.5rem;
 	}
 }
