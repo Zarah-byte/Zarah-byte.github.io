@@ -114,6 +114,11 @@ body {
 	& a {
 		text-decoration: underline 0.1rem var(--color-text);
 		text-underline-offset: 0.1rem;
+		transition: opacity var(--transition-fast);
+
+		&:hover {
+			opacity: 0.6;
+		}
 	}
 
 	& p {
@@ -147,18 +152,28 @@ body {
 		padding-top: 2rem;
 		padding-bottom: 2rem;
 		border-bottom: 1px solid var(--color-text);
+		transition: background-color var(--transition-medium), color var(--transition-medium);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		cursor: pointer;
 
 		&:hover {
 			background-color: var(--color-text);
 			color: var(--color-bg);
+
+			.img-num,
+			.built-with {
+				opacity: 1;
+			}
 		}
 
 		a {
-		display: flex;
-		flex-direction: column;
-		gap: var(--space-sm);
-		/* padding-block: var(--space-lg); */
-	}
+			display: flex;
+			flex-direction: column;
+			gap: var(--space-sm);
+			width: 100%;
+		}
 	}
 }
 
@@ -175,10 +190,15 @@ body {
 	letter-spacing: 0.04em;
 	text-transform: uppercase;
 	flex-shrink: 0;
+	opacity: 0.45;
+	transition: opacity var(--transition-medium);
 }
 
 h3 {
 	font-family: var(--font-heading);
+	font-size: var(--text-xl);
+	font-weight: 700;
+	letter-spacing: -0.02em;
 	line-height: 1;
 }
 
@@ -196,35 +216,10 @@ h3 {
 	font-size: var(--text-sm);
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
+	opacity: 0.55;
+	transition: opacity var(--transition-medium);
 }
 
-
-/* =========================
-   FIND ME 
-========================= */
-
-.find_links {
-	padding-top: var(--space-2xl);
-
-	h2 {
-		margin-bottom: var(--space-md);
-	}
-
-	ul {
-		display: grid;
-		gap: var(--space-sm);
-	}
-
-	li a {
-		display: inline-flex;
-		align-items: center;
-		gap: var(--space-xs);
-	}
-
-	li a:hover .icon-arrow {
-		transform: rotate(45deg);
-	}
-}
 
 /* =========================
    FOOTER
@@ -232,10 +227,38 @@ h3 {
 
 footer {
 	padding-block: var(--space-lg) var(--space-xs);
-	font-size: 0.75rem;
+	font-size: var(--text-base);
+	display: flex;
+	flex-direction: column-reverse;
+	align-items: center;
+	gap: var(--space-sm);
 	text-align: center;
-	display: grid;
-	gap: var(--space-2xs);
+}
+
+.footer-links {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: var(--space-sm);
+	list-style: none;
+
+	a {
+		display: inline-flex;
+		align-items: center;
+		gap: var(--space-2xs);
+		font-family: var(--font-heading);
+		font-weight: 700;
+		letter-spacing: -0.01em;
+		transition: opacity var(--transition-fast);
+	}
+
+	a:hover {
+		opacity: 0.6;
+	}
+
+	a:hover .icon-arrow {
+		transform: rotate(45deg);
+	}
 }
 
 /* =========================
@@ -333,5 +356,18 @@ footer {
 	.projects li {
 		padding-top: 0.5rem;
 		padding-bottom: 0.5rem;
+	}
+
+	footer {
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		padding-block: var(--space-xl);
+		text-align: left;
+	}
+
+	.footer-links {
+		flex-direction: row;
+		gap: var(--space-lg);
 	}
 }
