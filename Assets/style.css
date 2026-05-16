@@ -158,7 +158,8 @@ body {
 		justify-content: center;
 		cursor: pointer;
 
-		&:hover {
+		&:hover,
+		&.is-active {
 			background-color: var(--color-text);
 			color: var(--color-bg);
 
